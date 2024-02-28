@@ -1,0 +1,21 @@
+[submodule "asdf/.asdf"]
+	path = asdf/.asdf
+	url = https://github.com/asdf-vm/asdf.git
+[submodule "nvm/.nvm"]
+	path = nvm/.nvm
+	url = https://github.com/creationix/nvm.git
+[submodule "fish/.local/share/omf"]
+	path = fish/.local/share/omf
+	url = https://github.com/oh-my-fish/oh-my-fish.git
+[submodule "fish/.config/fisherman/bass"]
+	path = fish/.config/fisherman/bass
+	url = https://github.com/edc/bass
+[submodule "fish/.config/fisherman/nvm"]
+	path = fish/.config/fisherman/nvm
+	url = https://github.com/fisherman/nvm
+[submodule "fish/.config/fisherman/thefuck"]
+	path = fish/.config/fisherman/thefuck
+	url = https://github.com/oh-my-fish/plugin-thefuck
+[submodule "fish/.config/fisherman/z"]
+	path = fish/.config/fisherman/z
+	url = https://github.com/fisherman/z
