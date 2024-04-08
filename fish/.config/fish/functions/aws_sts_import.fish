@@ -1,4 +1,9 @@
 function aws_sts_import
+  if not type -q crudini; or not type -q jq
+    echo "Install crudini and jq packages first"
+    return
+  end
+
   set --local files (find . $HOME/Descargas $HOME/Downloads -maxdepth 1 -name "aws_sts*" 2>/dev/null)
   
   if test (count $files) -gt 1;
@@ -8,7 +13,12 @@ function aws_sts_import
   end
 
   if test -z "$filetoload"; 
+    echo "No file to load"
     return
+  end
+
+  if test ! -d $HOME/.aws;
+    mkdir -p $HOME/.aws
   end
 
   echo Will load STS token from $filetoload
